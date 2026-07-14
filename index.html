@@ -20,8 +20,10 @@
 
 body{
     background: linear-gradient(
-        135deg,
-     #3A0A5E
+     135deg,
+        #250033 0%,
+        #3A0A5E 50%,
+        #4A006B 100%
     );
     background-size: 300% 300%;
     animation: gradientMove 15s ease infinite;
@@ -94,9 +96,14 @@ h1{
 }
 
 .btn{
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
   width:100%;
-  padding:14px;
+  height:72px;
+
+  padding:0 20px;
   margin-bottom:12px;
   border-radius:16px;
   text-decoration:none;
@@ -104,6 +111,7 @@ h1{
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.12);
+
   color:#fff !important;
 }
 
@@ -124,12 +132,14 @@ h1{
   align-items:center;
   justify-content:center;
   gap:14px;
+
+  width:100%;
 }
 
 .txt{
   width:auto;
-  text-align:left;
-  white-space: nowrap;
+  text-align:center;
+  white-space:nowrap;
 }
 
 .txt b{
